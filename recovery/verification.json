@@ -1,0 +1,10 @@
+{
+  "comparison_snapshot_sha256": "727dddbe1572a2dd209b034bc76c662f2ddc089ec8bb3371ce21fe368e1fd377",
+  "comparison_snapshot_is_remapped": true,
+  "recovered_sha256": "64a3dd17605a0bd008cc925a94cf385f3f9882a56fbbe9091b7ab767b8851e77",
+  "original_classes": 410,
+  "recovered_classes": 410,
+  "mixin_classes": 54,
+  "srg_members_verified": 49,
+  "resources": "All original non-manifest resources preserved byte-for-byte; resource directory normalized to lowercase"
+}

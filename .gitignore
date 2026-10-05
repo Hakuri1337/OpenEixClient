@@ -22,3 +22,13 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Recovered Forge workspace
+.gradle/
+build/
+run/
+.idea/
+*.iml
+!gradle/wrapper/gradle-wrapper.jar
+!libs/*.jar
+!src/main/resources/META-INF/jarjar/*.jar

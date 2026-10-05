@@ -1,0 +1,54 @@
+plugins {
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '6.0.35'
+}
+
+group = 'com.heypixel.heypixelmod'
+version = '9.3-recovered'
+base { archivesName = 'EixClient-1.20.1-Forge' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'info'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+            arg '-mixin.config=EixClient.mixins.json'
+            mods { naven { source sourceSets.main } }
+        }
+    }
+}
+
+repositories { mavenCentral() }
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    compileOnly 'org.jetbrains:annotations:24.0.1'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-proc:none', '-Xmaxerrs', '1000']
+}
+jar {
+    manifest.attributes(
+        'Specification-Title': 'EixClient',
+        'Specification-Vendor': 'jiuxian_baka',
+        'Specification-Version': '1',
+        'Implementation-Title': 'EixClient',
+        'Implementation-Version': project.version,
+        'MixinConfigs': 'EixClient.mixins.json'
+    )
+    finalizedBy 'reobfJar'
+}
+
+// Restored private @Shadow/@Overwrite members cannot be inferred from the
+// Java superclass. Preserve their original SRG targets during packaging.
+tasks.withType(net.minecraftforge.gradle.userdev.tasks.RenameJarInPlace).configureEach {
+    extraMappings.from(file('recovery/mixin-reobf.tsrg'))
+}

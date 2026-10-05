@@ -1,0 +1,62 @@
+com/heypixel/heypixelmod/mixin/O/CapabilityTrackerMixin com/heypixel/heypixelmod/mixin/O/CapabilityTrackerMixin
+	enabled f_84586_
+	setEnabled (Z)V m_84590_
+com/heypixel/heypixelmod/mixin/O/MixinAbstractContainerScreen com/heypixel/heypixelmod/mixin/O/MixinAbstractContainerScreen
+	leftPos f_97735_
+	topPos f_97736_
+	imageWidth f_97726_
+	imageHeight f_97727_
+	renderBg (Lnet/minecraft/client/gui/GuiGraphics;FII)V m_7286_
+com/heypixel/heypixelmod/mixin/O/MixinClientHandshakePacketListenerImpl com/heypixel/heypixelmod/mixin/O/MixinClientHandshakePacketListenerImpl
+	connection f_104522_
+	minecraft f_104519_
+com/heypixel/heypixelmod/mixin/O/MixinConnection com/heypixel/heypixelmod/mixin/O/MixinConnection
+	LOGGER f_129465_
+	genericsFtw (Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketListener;)V m_129517_
+	sendPacket (Lnet/minecraft/network/protocol/Packet;Lnet/minecraft/network/PacketSendListener;)V m_129520_
+com/heypixel/heypixelmod/mixin/O/MixinEntity com/heypixel/heypixelmod/mixin/O/MixinEntity
+	stuckSpeedMultiplier f_19865_
+	getViewXRot (F)F m_5686_
+	getViewYRot (F)F m_5675_
+	calculateViewVector (FF)Lnet/minecraft/world/phys/Vec3; m_20171_
+	getViewVector (F)Lnet/minecraft/world/phys/Vec3; m_20252_
+com/heypixel/heypixelmod/mixin/O/MixinGameRenderer com/heypixel/heypixelmod/mixin/O/MixinGameRenderer
+	minecraft f_109059_
+	renderBuffers f_109064_
+com/heypixel/heypixelmod/mixin/O/MixinGui com/heypixel/heypixelmod/mixin/O/MixinGui
+	title f_93001_
+	titleTime f_93000_
+	titleFadeInTime f_92970_
+	titleStayTime f_92971_
+	titleFadeOutTime f_92972_
+	subtitle f_93002_
+com/heypixel/heypixelmod/mixin/O/MixinLocalPlayer com/heypixel/heypixelmod/mixin/O/MixinLocalPlayer
+	connection f_108617_
+	minecraft f_108619_
+	wasSprinting f_108603_
+	wasShiftKeyDown f_108602_
+	xLast f_108595_
+	yLast1 f_108596_
+	zLast f_108597_
+	yRotLast f_108598_
+	xRotLast f_108599_
+	positionReminder f_108604_
+	lastOnGround f_108600_
+	autoJumpEnabled f_108612_
+	isControlledCamera ()Z m_108636_
+	sendIsSprintingIfNeeded ()V m_254869_
+	sendPosition ()V m_108640_
+com/heypixel/heypixelmod/mixin/O/MixinPacketThreadUtils com/heypixel/heypixelmod/mixin/O/MixinPacketThreadUtils
+	LOGGER f_131354_
+com/heypixel/heypixelmod/mixin/O/MixinPlayerTabOverlay com/heypixel/heypixelmod/mixin/O/MixinPlayerTabOverlay
+	getNameForDisplay (Lnet/minecraft/client/multiplayer/PlayerInfo;)Lnet/minecraft/network/chat/Component; m_94549_
+com/heypixel/heypixelmod/mixin/O/MixinTimer com/heypixel/heypixelmod/mixin/O/MixinTimer
+	partialTick f_92518_
+	tickDelta f_92519_
+	lastMs f_92520_
+	msPerTick f_92521_
+com/heypixel/heypixelmod/mixin/O/MixinVertexBuffer com/heypixel/heypixelmod/mixin/O/MixinVertexBuffer
+	indexBufferId f_166860_
+com/heypixel/heypixelmod/mixin/O/MixinWindow com/heypixel/heypixelmod/mixin/O/MixinWindow
+	width f_85359_
+	height f_85360_

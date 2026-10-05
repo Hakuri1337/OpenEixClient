@@ -1,0 +1,12 @@
+*.java text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.tsrg text eol=lf
+*.tsv text eol=lf
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+src/main/resources/** -text
+libs/*.jar binary
+gradle/wrapper/*.jar binary

@@ -1,0 +1,112 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "org.smartboot.socket",
+        "artifact": "aio-core"
+      },
+      "version": {
+        "range": "[1.5,1.6)",
+        "artifactVersion": "1.5.38"
+      },
+      "path": "META-INF/jarjar/aio-core-1.5.38.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.humbleui",
+        "artifact": "types"
+      },
+      "version": {
+        "range": "[0.2,0.3)",
+        "artifactVersion": "0.2.0"
+      },
+      "path": "META-INF/jarjar/types-0.2.0.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.humbleui",
+        "artifact": "skija-shared"
+      },
+      "version": {
+        "range": "[0.116,0.117)",
+        "artifactVersion": "0.116.4"
+      },
+      "path": "META-INF/jarjar/skija-shared-0.116.4.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.humbleui",
+        "artifact": "skija-windows-x64"
+      },
+      "version": {
+        "range": "[0.116,0.117)",
+        "artifactVersion": "0.116.4"
+      },
+      "path": "META-INF/jarjar/skija-windows-x64-0.116.4.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "com.googlecode.soundlibs",
+        "artifact": "mp3spi"
+      },
+      "version": {
+        "range": "[1.9.5,1.10)",
+        "artifactVersion": "1.9.5.4"
+      },
+      "path": "META-INF/jarjar/mp3spi-1.9.5.4.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "com.googlecode.soundlibs",
+        "artifact": "jlayer"
+      },
+      "version": {
+        "range": "[1.0.1,1.0.2)",
+        "artifactVersion": "1.0.1.4"
+      },
+      "path": "META-INF/jarjar/jlayer-1.0.1.4.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "com.googlecode.soundlibs",
+        "artifact": "tritonus-share"
+      },
+      "version": {
+        "range": "[0.3.7,0.4)",
+        "artifactVersion": "0.3.7.4"
+      },
+      "path": "META-INF/jarjar/tritonus-share-0.3.7.4.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "com.googlecode.soundlibs",
+        "artifact": "vorbisspi"
+      },
+      "version": {
+        "range": "[1.0.3,1.0.4)",
+        "artifactVersion": "1.0.3.3"
+      },
+      "path": "META-INF/jarjar/vorbisspi-1.0.3.3.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "com.googlecode.soundlibs",
+        "artifact": "jorbis"
+      },
+      "version": {
+        "range": "[0.0.17,0.0.18)",
+        "artifactVersion": "0.0.17.4"
+      },
+      "path": "META-INF/jarjar/jorbis-0.0.17.4.jar",
+      "isObfuscated": false
+    }
+  ]
+}

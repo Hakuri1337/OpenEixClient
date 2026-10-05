@@ -1,0 +1,23 @@
+Validation environment: Windows 11 x64, Azul JDK 17.0.20.1, Gradle 8.8
+Minecraft 1.20.1, Forge 47.3.0, official 1.20.1 mappings
+
+Final command (JAVA_HOME set to JDK 17):
+gradlew.bat --offline clean build genIntellijRuns -x downloadAssets
+Result: BUILD SUCCESSFUL in 25s; 13 actionable tasks executed.
+compileJava, processResources, jar, reobfJar, build, genIntellijRuns completed.
+
+Development startup command:
+gradlew.bat --offline runClient -x downloadAssets
+Result: BUILD SUCCESSFUL in 1m 10s.
+Observed: 9 nested dependencies discovered, refmap remapped, Forge initialized,
+fonts loaded, default module configuration loaded, sound engine started,
+texture atlases created, normal Minecraft shutdown, configuration saved.
+No fatal initialization error in the successful startup.
+
+Minecraft asset download was skipped for this bounded smoke test.
+Title panorama assets were fetched and verified against the asset-index SHA-1.
+First ordinary run should allow full asset download. Remaining sound warnings
+are not a complete audiovisual validation. No server or module-by-module test.
+
+Archive structural checks: see verification.json.
+No automated behavioral test suite was supplied by the original binary.
